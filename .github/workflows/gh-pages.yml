@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-node@v2-beta
+      - uses: actions/setup-node@v3.6.0
         with:
           node-version: '18'
 
@@ -39,4 +39,4 @@ jobs:
           path: ./public-dist
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v2.0.2
